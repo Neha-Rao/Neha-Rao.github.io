@@ -1,1 +1,26 @@
-Hello World
+<html>
+    <body>
+        <div style="text-align: center">
+            <br /><br /><br /><br />
+            <div>
+                <img style="width: 400px; margin-right: 40px" id="leftFinger" src="a.png">
+                <img style="width: 400px; margin-left: 40px" id="rightFinger" src="b.png">
+            </div>
+            <br /><br /><br />
+            <div style="display: inline-block;">
+                <button style="font-size : 90px; background: none; color: inherit; padding: 0; outline: inherit; border: 0" onmousedown="mouseDown()" onmouseup="mouseUp()" type="button">🥺</button>
+                <p>Press me?</p>
+            </div>
+        </div>
+        <script>
+            function mouseUp() {
+                document.getElementById('leftFinger').style.marginRight = "40px";
+                document.getElementById('rightFinger').style.marginLeft = "40px";
+            }
+            function mouseDown() {
+                document.getElementById('leftFinger').style.marginRight = "5px";
+                document.getElementById('rightFinger').style.marginLeft = "5px";
+            }
+        </script>
+    </body>
+</html>
